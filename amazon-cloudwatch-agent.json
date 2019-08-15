@@ -1,0 +1,20 @@
+{
+	"agent": {
+		"metrics_collection_interval": 60,
+		"run_as_user": "root"
+	},
+	"logs": {
+		"logs_collected": {
+			"files": {
+				"collect_list": [
+					{
+						"file_path": "/var/log/syslog",
+						"log_group_name": "foundeo-web",
+						"log_stream_name": "{hostname}/syslog",
+						"timestamp_format" :"%b %d %H:%M:%S"
+					}
+                                ]
+                        }
+               }
+       }
+}
